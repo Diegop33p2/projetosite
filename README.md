@@ -1,2 +1,2 @@
 # projetosite
- aprendendo ainda a usar git e git hub
+ aprendendo e treinando html e css
