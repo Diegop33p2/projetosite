@@ -1,0 +1,64 @@
+/* Reset global - Zera margens, preenchimentos e utiliza a caixa de modelo border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo da logo - Define a largura da imagem da logo e ajusta a posição para a direita */
+.logo-left img {
+    width: 250px;
+    right: 150px;
+}
+
+/* Estilo do nome centralizado verticalmente em relação à imagem - Adiciona margem à esquerda para separar a imagem do texto */
+h1 {
+    margin-left: 20px;
+}
+
+/* Estilo do contêiner principal - Estabelece um contêiner flexível com espaçamento, alinhamento e quebra de linha */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilo do cabeçalho - Cria um cabeçalho flexível com sombra e borda */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #000;
+}
+
+/* Estilo dos itens de imagem - Define o plano de fundo, tamanho e efeitos de transição nas imagens */
+.img-box {
+    background: var(--img) center;
+    background-size: cover;  /*para cobrir todo o elemento */
+    flex-basis: calc(20% - 20px);
+    height: 400px;
+    position: relative;
+    transition: 400ms all ease; /*para suavizar as transições */
+    filter: grayscale(100%) opacity(35%); /*para aplicar escala de cinza e opacidade. */
+}
+
+/* Efeito hover nos itens de imagem - Ajusta o tamanho e remove o efeito de escala de cinza e opacidade */
+.img-box:hover {
+    flex-basis: calc(25% - 40px);
+    filter: grayscale(0%) opacity(100%);
+}
+
+/* Remove a transformação aplicada nas imagens ímpares */
+.img-box:nth-child(odd) {
+    transform: none;
+}
+
+/*Alinha as imagens ímpares ao topo do contêiner flexível */
+.img-box:nth-child(odd) {
+    align-self: flex-start;
+}
