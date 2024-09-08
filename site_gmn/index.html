@@ -3,50 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GYM - DP33</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>One Piece</h1>
+        <h1>Treinos GYM</h1>
     </header>
     <main>
         <section>
 
            <input type="text" placeholder="Digite o nome">
-           <button>Pesquisar</button> 
+           <button onclick="pesquisar()">Pesquisar </button> 
         </section>
-        <section class="resultados-pesquisa">
-            <div class="item-resultado">
-                <h2>Tralfagar D. Law</h2>
-                <p class="descricao-meta">Trafalgar D. Water Law é um dos personagens mais enigmáticos e poderosos do universo de One Piece.
-                Capitão dos Piratas do Heart e um dos onze Supernovas, Law é um cirurgião habilíssimo, 
-                capaz de realizar complexas operações e manipular a matéria com sua Fruta do Diabo, a Ope Ope no Mi.</p>
-                <a href="#" target="_blank">Link</a>
-            </div>
-           
-            <div class="item-resultado">
-                <h2>Shanks, o Ruivo</h2>
-                <p class="descricao-meta">Shanks, o Ruivo, é um dos Yonko, os quatro imperadores mais poderosos do mundo de One Piece. 
-                    Conhecido por sua força e carisma, Shanks é um pirata lendário que inspirou Luffy a seguir seus sonhos. 
-                    Seu passado misterioso e seu papel na história são um dos maiores enigmas da série.</p>
-                <a href="#" target="_blank">Link para mais informações sobre Shanks</a>
-            </div>
-
-            <div class="item-resultado">
-                <h2>Buggy, o Palhaço</h2>
-                <p class="descricao-meta">Buggy, o Palhaço, é um pirata excêntrico e cômico conhecido por sua fruta do diabo, a Bara Bara no Mi,
-                    que lhe permite separar seu corpo em partes. Apesar de sua aparência ridícula, 
-                    Buggy é um adversário astuto e ambicioso, sempre em busca de tesouros e fama.</p>
-                <a href="#" target="_blank">Link para mais informações sobre Buggy</a>
-            </div>
+        <section class="resultados-pesquisa" id="resultados-pesquisas">
 
         </section>
     </main>
 
     <footer>
-        <p>One Piece - Personagens Importantes</p>
+        <p>Treinos GYM - Academia</p>
     </footer>
-
+    <script src="app.js"></script>
+    <script src="dados.js"></script>
 </body>
 </html>
